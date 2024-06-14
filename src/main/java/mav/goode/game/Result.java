@@ -1,8 +1,10 @@
 package mav.goode.game;
 
+import lombok.Data;
+
 import java.util.List;
 import java.util.Map;
-
+@Data
 public class Result {
     public String[][] matrix;
     public double reward;
