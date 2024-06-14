@@ -1,14 +1,17 @@
 package mav.goode.config;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 @Data
 public class WinCombination {
-    public double reward_multiplier;
+    @JsonProperty("reward_multiplier")
+    public double rewardMultiplier;
     public String when;
     public int count;
     public String group;
-    public String[][] covered_areas;
+    @JsonProperty("covered_areas")
+    public String[][] coveredAreas;
 
 
 

@@ -1,10 +1,12 @@
 package mav.goode.config;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
-import java.util.Map;
 @Data
 public class Probability {
-    public StandardSymbolProbability[] standard_symbols;
-    public BonusSymbols bonus_symbols;
+    @JsonProperty("standard_symbols")
+    public StandardSymbolProbability[] standardSymbols;
+    @JsonProperty("bonus_symbols")
+    public BonusSymbols bonusSymbols;
 }
